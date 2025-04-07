@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invite Generator</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; padding: 2rem; background: #f5f5fa; }
+    input, select, button { margin: 0.5rem 0; padding: 0.5rem; width: 100%; }
+    #output { background: #fff; padding: 1rem; border: 1px solid #ddd; margin-top: 1rem; display: none; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>💌 Invite Letter Generator</h1>
+  <form id="invite-form">
+    <input type="text" id="name" placeholder="Nama penerima" required />
+    <input type="text" id="event" placeholder="Nama acara" required />
+    <input type="text" id="time" placeholder="Waktu acara" required />
+    <input type="text" id="place" placeholder="Tempat acara" required />
+    <select id="tone">
+      <option value="formal">Formal</option>
+      <option value="funny">Lucu</option>
+      <option value="romantic">Romantis</option>
+    </select>
+    <button type="submit">🎉 Buat Surat Undangan</button>
+  </form>
+
+  <div id="output">
+    <h3>✨ Hasil Undangan:</h3>
+    <div id="preview"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
